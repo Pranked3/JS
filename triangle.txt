@@ -1,0 +1,106 @@
+/triangle checker*/
+
+var perp;
+var base;
+var hyp;
+var side;
+
+var a = parseInt(prompt("Enter First Side: "))
+var b = parseInt(prompt("Enter Second Side: "))
+var c = parseInt(prompt("Enter Third: "))
+
+if (a === c && a === b) {
+  console.log("");
+  console.log("");
+  console.log("");
+  console.log("");
+  console.log("");
+  console.log("");
+  console.log("");
+  console.log("");
+  console.log("");
+  console.log("");
+  console.log("");
+  console.log("");
+  console.log("");
+  console.log("");
+  setTimeout(function(){
+      console.log("Your sides are: " + a + ", " + b + ", " + c )
+    
+    }, 2000)
+  setTimeout(function(){
+      console.log("Checking...")
+    
+    }, 4000)
+  setTimeout(function(){
+      console.log("This is an equilateral triangle!")
+    
+    }, 6000)
+} else {
+  if (a > b && a > c) {
+    var hyp = a;
+    var base = b;
+    var perp = c;
+  }
+
+  if (b > a & b > c) {
+    var hyp = b;
+    var base = a;
+    var perp = c;
+   }
+
+  if (c > a && c > b) {
+    var hyp = c;
+    var base = a;
+    var perp = b;
+  
+  }
+  console.log("");
+  console.log("");
+  console.log("");
+  console.log("");
+  console.log("");
+  console.log("");
+  console.log("");
+  console.log("");
+  console.log("");
+  console.log("");
+  console.log("");
+  console.log("");
+  console.log("");
+  console.log("");
+  setTimeout(function(){
+      console.log("Your sides are: " + a + ", " + b + ", " + c )
+    
+    }, 2000)
+  setTimeout(function(){
+      console.log("Checking...")
+    
+    }, 4000)
+
+
+
+
+
+  if ((Math.pow(perp, 2)) + (Math.pow(base, 2)) === (Math.pow(hyp, 2))) {
+  
+    setTimeout(function(){
+     console.log("The sides correspond to a right angled triangle!")
+    
+    }, 6000)
+  
+  }  else {
+    setTimeout(function(){
+      console.log("The sides do not correspond to a right angled triangle or an equilateral triangle!")
+    
+    }, 6000)
+  }
+
+
+
+
+
+
+  }
+  
+
