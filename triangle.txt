@@ -1,4 +1,5 @@
-/triangle checker*/
+/*triangle checker*/
+/*NOTE: This is a txt file. You can change it to whatever extention you want. e.g. .js*/
 
 var perp;
 var base;
